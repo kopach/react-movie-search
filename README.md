@@ -13,6 +13,7 @@
 - [x] add loading indicator
 - [x] load poster on search page
 - [x] make sure app has state saved in URL (copy/paste of URL would open same page)
+- [x] publish app (via Github Pages
 - [ ] add pagination to list page (maybe with some infinite scroll. e.g. with ag-grid or similar https://www.ag-grid.com/javascript-grid/infinite-scrolling/)
 - [ ] load movie plot on listing page (requires 1 request per each item in list)
 - [ ] add "no results" info
@@ -23,4 +24,3 @@
 - [ ] add input autocomplete (e.g. https://select2.org/data-sources/ajax)
 - [ ] add more tests
 - [ ] refactor rest services - keep them separate from APP code
-- [ ] publish app (e.g. via Github Pages https://skryvets.com/blog/2018/09/20/an-elegant-solution-of-deploying-react-app-into-a-subdirectory/)

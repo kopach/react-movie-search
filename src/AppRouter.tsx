@@ -1,6 +1,6 @@
 // src/AppRouter.tsx
 
-import React, { Suspense } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
 import { AppBackground } from './components/AppBackground'
@@ -8,11 +8,23 @@ import { ModalSpinner } from './components/ModalSpinner'
 import { HomePage } from './pages/HomePage'
 import { MovieList } from './pages/MovieList/MovieList'
 
-const AppRouter: React.FC = (): JSX.Element => {
+const AppRouter: React.FC = (): JSX.Element | null => {
+  const [isFront, setIsFront] = useState(false)
+
+  useEffect(() => {
+    process.nextTick(() => {
+      if (globalThis.window ?? false) {
+        setIsFront(true)
+      }
+    })
+  }, [])
+
+  if (!isFront) return null
+
   return (
     <>
       <AppBackground />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <RecoilRoot>
           <Suspense fallback={<ModalSpinner />}>
             <Switch>

@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 const SearchForm: React.FC<ISearchForm> = ({ title, year }): JSX.Element => (
   <Card>
     <Card.Body>
-      <Form action="/search" method="get" autoComplete="off">
+      <Form action="search" method="get" autoComplete="off">
         <Form.Group controlId="movieTitle">
           <Form.Label>Title</Form.Label>
           <Form.Control name="t" type="text" placeholder="Title" defaultValue={title} />
