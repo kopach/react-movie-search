@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppBackground /> renders as expected 1`] = `
+<Fragment>
+  <styled.div />
+  <styled.div>
+    <Styled(WithStyles(MatrixParallax)) />
+  </styled.div>
+</Fragment>
+`;

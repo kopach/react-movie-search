@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 import AppRouter from './AppRouter'
 
 describe('<AppRouter />', () => {
-  let component
+  let component: ReturnType<typeof shallow>
 
   beforeEach(() => {
     component = shallow(<AppRouter />)

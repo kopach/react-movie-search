@@ -1,21 +1,28 @@
 // src/AppRouter.tsx
 
-import React, { FunctionComponent, Suspense } from 'react'
+import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { RecoilRoot } from 'recoil'
-import App from './App'
+import { AppBackground } from './components/AppBackground'
+import { ModalSpinner } from './components/ModalSpinner'
+import { HomePage } from './pages/HomePage'
+import { MovieList } from './pages/MovieList/MovieList'
 
-const AppRouter: FunctionComponent = () => {
+const AppRouter: React.FC = (): JSX.Element => {
   return (
-    <Router>
-      <RecoilRoot>
-        <Suspense fallback={<span>Loading...</span>}>
-          <Switch>
-            <Route exact path="/" component={App} />
-          </Switch>
-        </Suspense>
-      </RecoilRoot>
-    </Router>
+    <>
+      <AppBackground />
+      <Router>
+        <RecoilRoot>
+          <Suspense fallback={<ModalSpinner />}>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/search" component={MovieList} />
+            </Switch>
+          </Suspense>
+        </RecoilRoot>
+      </Router>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.scss'
+import './types'
 import AppRouter from './AppRouter'
 
 // You need bootstrap? $ yarn add bootstrap

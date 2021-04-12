@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModalSpinner /> renders as expected 1`] = `
+<styled.div>
+  <styled.div>
+    <div
+      className="row h-100"
+    >
+      <div
+        className="col-sm-12 my-auto"
+      >
+        <Styled(FontAwesomeIcon) />
+      </div>
+    </div>
+  </styled.div>
+</styled.div>
+`;

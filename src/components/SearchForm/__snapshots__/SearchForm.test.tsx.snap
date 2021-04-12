@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchForm /> renders as expected 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-body"
+  >
+    <form
+      action="/search"
+      autoComplete="off"
+      className=""
+      method="get"
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className="form-label"
+          htmlFor="movieTitle"
+        >
+          Title
+        </label>
+        <input
+          className="form-control"
+          id="movieTitle"
+          name="t"
+          placeholder="Title"
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          className="form-label"
+          htmlFor="movieYear"
+        >
+          Year
+        </label>
+        <input
+          className="form-control"
+          id="movieYear"
+          name="y"
+          placeholder="Year"
+          type="number"
+        />
+      </div>
+      <button
+        className="btn btn-outline-primary btn-block"
+        disabled={false}
+        type="submit"
+      >
+        Search
+      </button>
+      <button
+        className="btn btn-outline-secondary btn-block"
+        disabled={true}
+        type="button"
+      >
+        I'm Feeling Lucky
+      </button>
+    </form>
+  </div>
+</div>
+`;
