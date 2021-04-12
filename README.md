@@ -23,3 +23,4 @@
 - [ ] add input autocomplete (e.g. https://select2.org/data-sources/ajax)
 - [ ] add more tests
 - [ ] refactor rest services - keep them separate from APP code
+- [ ] publish app (e.g. via Github Pages https://skryvets.com/blog/2018/09/20/an-elegant-solution-of-deploying-react-app-into-a-subdirectory/)
